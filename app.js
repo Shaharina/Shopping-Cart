@@ -7,6 +7,7 @@ function updateCaseNumber(isIncreasing) {
     else if (caseNumber > 0) {
         caseNumber = parseInt(caseNumber) - 1;
     }
+    caseInput.value = caseNumber;
     //update casetotal
     const casetotal = document.getElementById('case-total');
     casetotal.innerText = caseNumber * 59;
